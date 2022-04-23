@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="{{route('cabinet.index-form')}}">Профиль</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{{route('posts.index')}}">Публикации</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mb-2 mb-lg-0" style="margin-right: 80%">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{{route('posts.index')}}?user_id={{auth('web')->id()}}">Мои Публикации</a>
+          </li>
+        </ul>
+      </div>
+
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{route('auth.logout')}}">Выйти из профиля</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
